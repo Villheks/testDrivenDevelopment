@@ -1,7 +1,24 @@
 using System;
 using Xunit;
 
-    public class InchConverterTests
+public class InchConverter
+{
+    public static double InchToMillimeters(double inches)
+    {
+        return inches * 25.4;
+    }
+
+    public static double InchToCentimeters(double inches)
+    {
+        return inches * 2.54;
+    }
+
+    public static double InchToMeters(double inches)
+    {
+        return inches * 0.0254;
+    }
+}
+public class InchConverterTests
     {
         public static void RunTests()
         {
